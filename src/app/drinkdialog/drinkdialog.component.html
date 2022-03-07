@@ -1,0 +1,40 @@
+<div class="dialog-component">
+  <img class="dialog-image" src="../../assets/My project.png" >
+  <h3 class="dialog-header">Recipe editor</h3>
+  
+  <h4 style="color: #b4b4b4"></h4> <!--Data recipe ID! debugging use only-->
+  <mat-form-field>
+      <mat-label style="color: #b4b4b4">Title</mat-label>
+      <input matInput cdkFocusInitial [(ngModel)]="data.recipe.name" />
+      <!--cdkFocusInitial automatically focus on recipe title when dialog is opened-->
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label style="color: #b4b4b4">Category</mat-label>
+      <input matInput [(ngModel)]="data.recipe.category"/> 
+    </mat-form-field>
+  
+    
+    <mat-form-field>
+      <mat-label style="color: #b4b4b4">Image (insert url)</mat-label>
+      <input matInput [(ngModel)]="data.recipe.imagePath">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label style="color: #b4b4b4">Description</mat-label>
+      <textarea matInput [(ngModel)]="data.recipe.description"></textarea> <!--cdkFocusInitial automatically focus on recipe title when dialog is opened-->
+    </mat-form-field>
+  
+    <div mat-dialog-actions>
+      <button mat-button class="dialog-button" [mat-dialog-close]="{ recipe: data.recipe }">Save</button>
+      <button mat-button class="dialog-button" [mat-dialog-close]="">Cancel</button>
+      <button mat-button class="dialog-button"
+      *ngIf="data.enableDelete"
+      color="primary"
+      aria-label="Delete"
+      [mat-dialog-close]="{ }">
+      <mat-icon style="color: white;">delete</mat-icon>
+      </button>
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+    <div class="gridcard" *ngIf="recipe" (dblclick)="edit.emit(recipe)">
+
+                <img class="gridcard-image" [src]="recipe.imagePath">
+        <mat-grid-tile-footer class="gridcard-footer">
+            <h5>{{ recipe.id }}. </h5>
+            <h5>{{ recipe.name }}</h5>
+            <mat-chip-list aria-label="Fish selection">
+                <mat-chip class="gridcard-chip" [ngStyle]="{ backgroundColor: recipe.categoryColor }"> {{ recipe.category }} </mat-chip>
+            </mat-chip-list>
+            <!-- <p class="gridcard-divider" style="margin-left: 0px"></p>
+            <mat-icon class="gridcard-icons" aria-hidden="false" aria-label="Favorite icon" (click)="changeIcon('favorite')" (click)=" selectedColor = 'accent'" [color]="selectedColor" >{{ icon }}</mat-icon>
+            <span class="card-span"></span>
+            <mat-icon class="gridcard-icons" aria-hidden="false" aria-label="Share icon">share</mat-icon> -->
+            <p class="gridcard-divider" style="margin-left: 20px"></p>
+        </mat-grid-tile-footer>
+    </div>
+
+

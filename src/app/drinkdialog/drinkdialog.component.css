@@ -1,0 +1,39 @@
+.dialog-button {
+    background-color: #207078;
+    border-radius: 13px;
+}
+
+.dialog-component {
+    border-radius: 33px;
+}
+
+.dialog-header {
+    text-align: center;
+    font-size: 18px;
+}
+
+.dialog-image {
+    max-width: 70px;
+    max-height: 70px;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 75px;
+    padding-right: 85px;
+    transition: all .3s ease-in-out;
+}
+
+
+.dialog-image:hover {
+    max-width: 70px;
+    max-height: 70px;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 75px;
+    padding-right: 85px;
+    transform: scale(1.2);
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #c7c7c7 !important;;
+   }

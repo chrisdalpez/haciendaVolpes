@@ -1,0 +1,53 @@
+.navigationBar-logo {
+    max-height: 50px;
+}
+.navigationBar-logo-div {
+    background-color: #000000;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #000000 50%, #207178 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    padding: 5px;
+}
+
+.navigationBar-logo-div:hover {
+    background-position: left;
+}
+
+
+.navigationBar {
+    padding: 20px;
+    background-color: #000000;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #FF9666;
+    
+}
+
+.navigationBar-solid {
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.navigationBar-routers {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.navigationBar-routers:hover {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 4px solid #FF9666;
+    visibility: visible;
+    
+}
+
+.example-spacer {
+    padding-left: 40px;
+}
+
+.navigationBar-routers-div {
+    float: right;
+}

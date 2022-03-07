@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "haciendavolpes-angular-app"
+  },
+  "targets": {
+    "haciendavolpes-angular-app": {
+      "hosting": {
+        "haciendaVolpes": [
+          "haciendavolpes-angular-app"
+        ]
+      }
+    }
+  }
+}

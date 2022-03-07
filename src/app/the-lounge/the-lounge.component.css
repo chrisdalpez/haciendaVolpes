@@ -1,0 +1,84 @@
+.image-placeholder {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: image-placeholder;
+    background-color: #000000;
+}
+  
+.text-placeholder {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      ". . .";
+    grid-area: text-placeholder;
+    background-color: #000000;
+}
+  
+.widget-placeholder {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: widget-placeholder;
+    background-color: #131313;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.the-lounge-body {
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+  
+.mainimage {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    padding-top: 15px;
+}
+
+
+.the-lounge-h1 {
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.the-lounge-p {
+    margin-top: 25px;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+.grid-photo-image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all .5s ease-in-out;
+    border-radius: 13px;
+
+}
+
+.grid-photo-image:hover {
+    transform: scale(1.1);
+}
+
+.the-lounge-gridlist {
+    padding-bottom: 40px;
+}
+
+.grid-tile { 
+    border-radius: 13px;
+}
