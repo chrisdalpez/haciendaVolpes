@@ -13,6 +13,7 @@ export class DrinkdialogComponent implements OnInit {
 
 
   constructor(
+    // MatDialogRef => Reference to a dialog opened via the MatDialog service.
     public dialogRef: MatDialogRef<DrinkdialogComponent>,
     private recipesComponent: RecipesComponent,
     @Inject(MAT_DIALOG_DATA) public data: DrinkdialogData //data object to the open method stored in drink-list component.
@@ -23,13 +24,13 @@ export class DrinkdialogComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-
+//Exports DialogData Interface in order to use it into drink-list
 export interface DrinkdialogData {
   imagePath: string | undefined;
   recipe: Partial<Recipe>; 
   enableDelete: boolean;
 }
-
+//Exports DialogResult Interface in order to use it into drink-list
 export interface DrinkDialogResult {
   recipe: Recipe;
   delete?: boolean;
