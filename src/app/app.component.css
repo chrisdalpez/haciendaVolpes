@@ -15,6 +15,9 @@
     align-items: stretch;
     grid-template-areas:
       "Footer-left Footer-center Footer-right";
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-top: 2px solid #FF9666;
   }
   
   .Footer-left { 

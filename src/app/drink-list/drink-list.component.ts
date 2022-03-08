@@ -36,7 +36,6 @@ export class DrinkListComponent implements OnInit {
   //Add Recipe: allows user to create a new recipe 
   // .doc() => Create a reference to a single document in a collection.
   // .set() => Create or overwrite a single document.
-
   addRecipe(recipe: Recipe) {
     this.drinklistCollection?.doc(recipe.id.toString()).set(recipe);
   }
@@ -104,9 +103,10 @@ export class DrinkListComponent implements OnInit {
       //If this statement is true, the true boolean calls removeRecipe in order to remove the doc from collection.
       if (result.delete = true) {
         this.removeRecipe(recipe);
+      } else {
+        this.editRecipe(result.recipe);
       }
       //Otherwise, the recipe will be updated.
-      this.editRecipe(result.recipe);
     });
   }
   
